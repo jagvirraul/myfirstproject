@@ -32,7 +32,7 @@ const App = () => {
                     onChange={(e) => setPassword(e.target.value)} />
             </FormGroup>
             <Button type="submit" color="primary" size="lg" block >
-                Log in
+                jagvir
             </Button>
         </Form >
     );
