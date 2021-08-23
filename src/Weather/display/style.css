@@ -1,0 +1,19 @@
+.box{
+    box-sizing: content-box;
+    align-items: center;
+    margin: auto;
+    border: 5px solid black;
+    padding :15px;
+    width: 83.4vw;
+}
+    
+.card{
+    align-items: center;
+    font-weight: bold;
+}  
+.card-title{
+    line-height: "20px";
+}
+.card-text{
+    font-size: 1.4rem;
+}  

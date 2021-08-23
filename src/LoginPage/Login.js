@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import './App.css';
+import './Login.css';
 import { Icon } from 'semantic-ui-react';
-const App = () => {
+const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [all, setAll] = useState([]);
@@ -13,7 +13,7 @@ const App = () => {
         console.log(all);
     };
     return (
-        <Form onSubmit={login} className="App" >
+        <Form onSubmit={login} className="Login" position="static" >
             <Icon.Group size='huge'>
                 <Icon color='black' size='big' name='circle outline' />
                 <Icon color='red' name='user' />
@@ -38,4 +38,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Login;
