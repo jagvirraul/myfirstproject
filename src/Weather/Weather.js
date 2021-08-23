@@ -6,14 +6,14 @@ const Weather = () => {
     const [weather, setWeather] = useState([]);
     const [country, setCountry] = useState("");
     const [city, setCity] = useState("");
-    const APIKEY = "e00eafb564c3e3c10afc20e113231972";
+    const APIKEY = "token";
 
     const weatherData = () => {
         if (city === "") {
             alert("Add Value")
         } else {
             axios.get(
-                `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${APIKEY}`
+                `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${token}`
             )
                 .then(data => {
                     setWeather(data);
